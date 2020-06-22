@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #EEEEEE;
+  color: #393c45; }
+
+.onlinestream-card {
+  padding: 20px 24px;
+  border-radius: 4px;
+  background-color: #1F253A;
+  width: 100% !important;
+  margin: 0 !important; }
+  .onlinestream-card .online-icon {
+    width: 120px;
+    margin-right: 25px; }
+  .onlinestream-card .title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff; }
+  .onlinestream-card .description {
+    line-height: 16px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 300; }
+  .onlinestream-card p {
+    margin: 0px; }

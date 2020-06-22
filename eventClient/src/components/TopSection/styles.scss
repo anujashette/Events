@@ -1,0 +1,68 @@
+@import '../../styles.scss';
+@import '../../styles/_variables.scss';
+
+.event-details{
+    @include boxShadow;
+
+    .line{
+        width: 100%;
+        padding: 1rem;
+        position: relative;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.48), white);
+        padding: 2.3px;
+    }
+    .top-section{
+        @include sideSpacing;
+
+        .event-title{
+            font-weight: 600;
+            font-family: sans-serif;
+            color: #000;
+        }
+        .additional-details{
+            font-size: 1.5em;
+        }
+        .btn-div{
+            text-align: end;
+        }
+        .btn-register{
+            background-color: #0378FF;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            width: 160px;
+            border: none;
+            height: 60px;
+            max-width: 160px;
+            font-size: 18px;
+            outline: none;
+        }
+    }
+
+    .border-div{
+        border-bottom: 0.1px solid #DDDDDD !important;
+        margin: 0 15px;
+    }
+    
+    .bottom-section{
+        @include sideSpacing;
+        .additional-details{
+            font-size: 16px;
+            font-weight: 400;
+            span{
+                padding: 0 30px 0 0;
+            }
+            .watch-icon{
+                width: 18.82px;
+                height: 23px;
+            }
+            .rupee{
+                font-weight: 500 !important;
+                color: black;
+            }
+        }
+    }
+}

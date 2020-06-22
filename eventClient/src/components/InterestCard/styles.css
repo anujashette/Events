@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #EEEEEE;
+  color: #393c45; }
+
+.interest-card {
+  padding: 16px 25px;
+  background-color: #ffffff;
+  margin: 20px 0; }
+  .interest-card .top-div {
+    font-size: 16px;
+    margin: 0px; }
+  .interest-card .bottom-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0 0; }
+    .interest-card .bottom-div .thumb {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px 6px 0; }
+    .interest-card .bottom-div .likes {
+      font-size: 16px;
+      font-weight: 500; }
+    .interest-card .bottom-div .like-description {
+      width: 179px;
+      margin: 0 29px 0 0;
+      font-size: 12px;
+      color: #666666; }
+  .interest-card .btn-interested {
+    width: 148px;
+    height: 38px;
+    font-size: 16px;
+    padding: 1px 6px;
+    color: #0378ff;
+    background: #ffffff;
+    border: 1px solid #0378ff;
+    border-radius: 4px;
+    cursor: pointer; }
