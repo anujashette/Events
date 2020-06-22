@@ -1,2 +1,1 @@
-export const FETCH_PRODUCTS = 'FETCH_PRODUCTS';
-export const COMPARE_PRODUCT = 'COMPARE_PRODUCT';
+export const FETCH_EVENTS = 'FETCH_EVENTS';

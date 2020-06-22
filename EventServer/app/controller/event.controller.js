@@ -82,8 +82,6 @@ EventController.prototype.readEvent = (req, res) => {
  */
 EventController.prototype.updateEvent = (req, res) => {
     try {
-        console.log('----3', req.body);
-
         const eventParam = {};
         const id = {};
 

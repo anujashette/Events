@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const EventType = require('../staticContent');
+const EventType = require('../../utility/staticContent');
 
 /****************************************************************************************************
  * @description Event schema.
@@ -104,8 +104,6 @@ EventModel.prototype.read = async () => {
  ****************************************************************************************************
  */
 EventModel.prototype.update = async(id,eventParam) => {
-    console.log('----7', eventParam);
-
     const updatedEvent = await Event.findByIdAndUpdate(id,eventParam);
     if(updatedEvent === null){
         return 'Event not found to update';

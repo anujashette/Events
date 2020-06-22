@@ -10,4 +10,8 @@
     .vertical-space-right{
         padding: 0 12px;
     }
+    @media screen and (max-width:990px) {
+        position: relative;
+        bottom: -35px;
+    }
 }

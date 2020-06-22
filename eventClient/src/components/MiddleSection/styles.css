@@ -13,3 +13,7 @@ body {
     padding: 0 10px 0 0; }
   .middle-section .vertical-space-right {
     padding: 0 12px; }
+  @media screen and (max-width: 990px) {
+    .middle-section {
+      position: relative;
+      bottom: -35px; } }

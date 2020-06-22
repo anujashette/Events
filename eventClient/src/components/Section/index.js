@@ -3,10 +3,10 @@ import './styles.css'
 import TopSection from '../TopSection'
 import MiddelSection from '../MiddleSection'
 
-const Section = () =>
+const Section = (props) =>
       <div className="section">
           <div className="cover">
-              <img className="cover-picture" src="https://in.bmscdn.com/nmcms/events/banner/desktop/media-desktop-aakash-mehtas-open-mic-on-mondays-2020-5-26-t-20-56-59.jpg"
+              <img className="cover-picture" src={props.event.cover}
                alt="event cover picture">
                </img>
                <div className="path">
@@ -19,10 +19,10 @@ const Section = () =>
               </div>
           </div>
           <div className="event-info">
-            <TopSection/>
+            <TopSection event={props.event}/>
           </div>
           <div className="Middle-section">
-            <MiddelSection/>
+            <MiddelSection event={props.event}/>
           </div>
       </div>;
 

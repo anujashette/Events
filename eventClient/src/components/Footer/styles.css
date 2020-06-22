@@ -173,3 +173,6 @@ body {
       color: #666666;
       text-align: center;
       padding: 30px; }
+  @media screen and (max-width: 990px) {
+    .footer {
+      display: none; } }

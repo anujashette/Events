@@ -5,7 +5,7 @@ import OnlineStreamCard from '../OnlineStreamCard';
 import InterestCard from '../InterestCard';
 import DescriptionCard from '../DescriptionCard';
 
-const MiddleSection = () =>
+const MiddleSection = (props) =>
     <div className="middle-section row">
         <div className="col-3 vertical-space-left">
             <ShareCard />
@@ -15,10 +15,10 @@ const MiddleSection = () =>
                 <OnlineStreamCard />
             </div>
             <div className="space">
-                <InterestCard />
+                <InterestCard event={props.event}/>
             </div>
             <div className="space">
-                <DescriptionCard />
+                <DescriptionCard event={props.event}/>
             </div>
         </div>
         <div className="col-3">

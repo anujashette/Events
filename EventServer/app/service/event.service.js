@@ -32,7 +32,6 @@ Service.prototype.createEvent = async (eventParam, callback) => {
 Service.prototype.readEvent = async (callback) => {
     try {
         const readResponse = await eventModel.read();
-        console.log(readResponse);
         return callback(null, readResponse);
     } catch (error) {
         log.logger.error('read Service',error);
@@ -48,24 +47,6 @@ Service.prototype.readEvent = async (callback) => {
  */
 Service.prototype.updateEvent = async (id, updateParam, callback) => {
     try {
-        console.log('----5', updateParam);
-
-        // const updateParam = {
-        //     title: eventParam.title,
-        //     eventType: eventParam.eventType,
-        //     language: eventParam.language,
-        //     allowedAge: eventParam.allowedAge,
-        //     duration: eventParam.duration,
-        //     startDate: eventParam.startDate,
-        //     endDate: eventParam.endDate,
-        //     description: eventParam.description,
-        //     price: eventParam.price,
-        //     cover: eventParam.cover,
-        //     broadcastPlatform: eventParam.broadcastPlatform
-        // };
-        // const id = { _id: eventParam.id };
-        // console.log('----6', eventParam.id);
-
         const updateResponse = await eventModel.update(id, updateParam);
         if (updateResponse === 'Event not found to update') {
             return callback(updateResponse);

@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="app">
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/events/:title" component={Home} />
           <Route component={NotFound} />
         </Switch>
       </div>

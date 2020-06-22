@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import product from './productReducer'
+import event from './eventReducer'
 
 const compareApp = combineReducers({
-  product
+  event
 });
 
-export default compareApp
+export default compareApp;
