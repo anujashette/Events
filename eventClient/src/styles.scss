@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #EEEEEE;
+  color: #393c45;
+}
+@mixin AlignHorizontallyCenter {
+  margin: 0 auto;
+}
+
+@mixin AlignVerticallyCenter {
+  margin: auto 0;
+}
+
+@mixin spaceAroundFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin sideSpacing {
+  margin: 0px !important;
+  padding: 15px 0;
+}
+
+@mixin boxShadow {
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.05);
+  background: $white;
+  
+}

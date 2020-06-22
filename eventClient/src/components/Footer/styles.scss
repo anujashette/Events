@@ -1,0 +1,212 @@
+@import '../../styles.scss';
+@import '../../styles/_variables.scss';
+
+@mixin sideMargin {
+    width: 90%;
+    margin: 0 auto;
+}
+.footer{
+    width: 100%;
+    .privacy-note{
+        padding: 20px 15px;
+        margin: 0px auto;
+        max-width: 1280px;
+        width: 100%;
+        background-color: rgb(242, 242, 242);
+    }
+    .title{
+        margin-bottom: 5px;
+        color: #7f7f7f;
+        line-height: 14px;
+        font-size: 12px;
+        font-weight: 500;
+      }   
+      .description{
+        color: #999;
+        line-height: 16px;
+        font-size: 12px;
+        margin: 1em 0;
+
+        span{
+            color: $interest-btn-color;
+            cursor: pointer;
+        }
+      }
+
+      .support-block{
+        width: auto;
+        flex-basis: auto;
+        margin: 0px;
+        background: $footer-support;
+        padding: 20px;
+      }
+      .inner-block{
+        width: 90%;
+        margin: 0 auto;
+      }
+      .icon-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        -webkit-box-align: start;
+        align-items: start;
+        width: auto;
+        height: auto;
+        flex-wrap: nowrap;
+        overflow: visible;
+        padding: 0px;
+        margin: 0px;
+        a{
+            text-decoration: none;
+            color: rgba(188, 192, 196, 0.74);
+            fill: rgba(188, 192, 196, 0.74);;
+        }
+        a:hover{
+            color: $white;
+            fill: $white;
+          }
+        .icon{
+            width: 50px;
+            height: 50px;
+            margin: 0px auto;
+            display: flex;
+          }
+          .about{
+            text-align: inherit;
+            line-height: 18px;
+            width: auto;
+            font-size: 11px;
+            padding: 0px;
+            margin: 10px 0px 0px;
+          }
+      }
+      .book-ticket-city{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        height: auto;
+        flex-wrap: nowrap;
+        background-color: rgb(49, 48, 53);
+        overflow: visible;
+        margin: 0px;
+        padding: 37px 18px;
+
+        .inner-div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            flex-wrap: wrap;
+            color: rgb(153, 153, 153);
+            width: 100%;
+            max-width: 1280px;
+            overflow: visible;
+            margin: 0px auto;
+            padding: 15px;
+        }
+      }
+      .list-div{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap; 
+        width:100%;
+
+        a{
+            font-size: 11px;
+            line-height: 19px;
+            text-decoration: none;
+            color: #7f7f7f;
+            transition:color 0.25s ease-in-out 0s;
+        }
+        a:hover{
+            color: $white;
+        }
+        div{
+            font-size: 15px;
+            line-height: 19px;
+            font-weight: 400;
+            letter-spacing: 0.1px;
+            text-transform: none;
+            color: #7f7f7f;
+            text-align: left;
+            margin: 0px 3px;
+            padding: 0px;
+        }
+    }
+      .footer-element{
+        width: 100%;
+        background: $footer-support;
+        padding: 10px 0 0;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+
+        .entity{
+            width: 25%;
+            padding: 30px 15px 0;
+
+            .title{
+                margin: 0 0 20px !important;
+            }
+        }
+        .entity-1{
+            width: 100% !important;
+            padding: 0 15px 0 !important;
+        }
+        .entity-2{
+            width: 100% !important;
+            padding: 30px 15px 0 !important;
+        }
+    }
+    .footer-bottom{
+        padding: 0 24px 20px;
+        background: #404043;
+        .inner-div{
+            @include sideMargin;
+            .logo{
+                display: flex;
+            }
+            .line{
+                height: 1px;
+                flex: 1 1 0%;
+                background: rgb(93, 93, 95);
+                margin: auto 0;
+            }
+            .company-name{
+                width: 160px;
+                padding: 0 20px;
+                text-align: center;
+                font-size: 20px;
+                color: white;
+                height: 100px;
+                margin: auto 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .share-icon{
+           @include sideMargin;
+           display: flex;
+            justify-content: center;
+            .icon{
+                width: 36px;
+                height: 36px;
+                margin-left: 10px;
+                fill: rgb(93, 93, 95);
+            }
+            .icon:hover{
+                fill: $white;
+            }
+        }
+        .copy-right{
+            font-size: 11px;
+            color: rgb(102, 102, 102);
+            text-align: center;
+            padding: 30px;
+            
+        }
+    }
+}

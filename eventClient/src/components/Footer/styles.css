@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #EEEEEE;
+  color: #393c45; }
+
+.footer {
+  width: 100%; }
+  .footer .privacy-note {
+    padding: 20px 15px;
+    margin: 0px auto;
+    max-width: 1280px;
+    width: 100%;
+    background-color: #f2f2f2; }
+  .footer .title {
+    margin-bottom: 5px;
+    color: #7f7f7f;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 500; }
+  .footer .description {
+    color: #999;
+    line-height: 16px;
+    font-size: 12px;
+    margin: 1em 0; }
+    .footer .description span {
+      color: #0378ff;
+      cursor: pointer; }
+  .footer .support-block {
+    width: auto;
+    flex-basis: auto;
+    margin: 0px;
+    background: #404043;
+    padding: 20px; }
+  .footer .inner-block {
+    width: 90%;
+    margin: 0 auto; }
+  .footer .icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    align-items: start;
+    width: auto;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow: visible;
+    padding: 0px;
+    margin: 0px; }
+    .footer .icon-container a {
+      text-decoration: none;
+      color: rgba(188, 192, 196, 0.74);
+      fill: rgba(188, 192, 196, 0.74); }
+    .footer .icon-container a:hover {
+      color: #ffffff;
+      fill: #ffffff; }
+    .footer .icon-container .icon {
+      width: 50px;
+      height: 50px;
+      margin: 0px auto;
+      display: flex; }
+    .footer .icon-container .about {
+      text-align: inherit;
+      line-height: 18px;
+      width: auto;
+      font-size: 11px;
+      padding: 0px;
+      margin: 10px 0px 0px; }
+  .footer .book-ticket-city {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    height: auto;
+    flex-wrap: nowrap;
+    background-color: #313035;
+    overflow: visible;
+    margin: 0px;
+    padding: 37px 18px; }
+    .footer .book-ticket-city .inner-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      flex-wrap: wrap;
+      color: #999999;
+      width: 100%;
+      max-width: 1280px;
+      overflow: visible;
+      margin: 0px auto;
+      padding: 15px; }
+  .footer .list-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+    .footer .list-div a {
+      font-size: 11px;
+      line-height: 19px;
+      text-decoration: none;
+      color: #7f7f7f;
+      transition: color 0.25s ease-in-out 0s; }
+    .footer .list-div a:hover {
+      color: #ffffff; }
+    .footer .list-div div {
+      font-size: 15px;
+      line-height: 19px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      text-transform: none;
+      color: #7f7f7f;
+      text-align: left;
+      margin: 0px 3px;
+      padding: 0px; }
+  .footer .footer-element {
+    width: 100%;
+    background: #404043;
+    padding: 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap; }
+    .footer .footer-element .entity {
+      width: 25%;
+      padding: 30px 15px 0; }
+      .footer .footer-element .entity .title {
+        margin: 0 0 20px !important; }
+    .footer .footer-element .entity-1 {
+      width: 100% !important;
+      padding: 0 15px 0 !important; }
+    .footer .footer-element .entity-2 {
+      width: 100% !important;
+      padding: 30px 15px 0 !important; }
+  .footer .footer-bottom {
+    padding: 0 24px 20px;
+    background: #404043; }
+    .footer .footer-bottom .inner-div {
+      width: 90%;
+      margin: 0 auto; }
+      .footer .footer-bottom .inner-div .logo {
+        display: flex; }
+      .footer .footer-bottom .inner-div .line {
+        height: 1px;
+        flex: 1 1 0%;
+        background: #5d5d5f;
+        margin: auto 0; }
+      .footer .footer-bottom .inner-div .company-name {
+        width: 160px;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        height: 100px;
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .footer .footer-bottom .share-icon {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center; }
+      .footer .footer-bottom .share-icon .icon {
+        width: 36px;
+        height: 36px;
+        margin-left: 10px;
+        fill: #5d5d5f; }
+      .footer .footer-bottom .share-icon .icon:hover {
+        fill: #ffffff; }
+    .footer .footer-bottom .copy-right {
+      font-size: 11px;
+      color: #666666;
+      text-align: center;
+      padding: 30px; }

@@ -1,0 +1,60 @@
+@import '../../styles/_variables.scss';
+@import '../../styles.scss';
+
+.header{
+  .main-header {
+    background: $header-color;
+    border-radius: 0 !important;
+    margin-bottom: 0px !important;
+    padding: 6px !important;
+
+    .sub-div{
+      width: 100%;
+      padding: 7px;
+      @include AlignHorizontallyCenter;
+    }
+  }
+  .sub-header{
+    width: 100%;
+    padding: 10px 25px;
+    background: #1f2533;
+    margin: 0px;
+    font-size: 1.3em;
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    cursor: pointer;
+
+    .rigth-sub-header{
+      @include spaceAroundFlex;
+    }
+    .left-sub-header{
+     @include spaceAroundFlex;
+      text-align-last: end;  
+    }
+  }
+}
+.header-title {
+  background: transparent;
+  color: white;
+  @include AlignVerticallyCenter;
+  text-align: center;
+}
+
+.search-icon{
+  color: $icon-color;
+  position: absolute;
+  left: 25px;
+  top: 12px;
+  font-size: 15px;
+  z-index: 100;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px 40px;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  font-size: larger;
+}

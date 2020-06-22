@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #EEEEEE;
+  color: #393c45; }
+
+.share-card {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  padding: 16px; }
+  .share-card h4 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: black; }
+  .share-card .fb-icon {
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 0 0;
+    cursor: pointer; }
+  .share-card .tw-icon {
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 0 10px;
+    cursor: pointer; }

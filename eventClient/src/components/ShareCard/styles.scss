@@ -1,0 +1,29 @@
+@import '../../styles.scss';
+@import '../../styles/_variables.scss';
+
+@mixin icon($margin) {
+    width: 20px;
+    height: 20px;
+    margin: $margin;
+    cursor: pointer;
+}
+
+.share-card {
+    @include boxShadow;
+    padding: 16px;
+
+    h4 {
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .fb-icon{
+        @include icon(10px 10px 0 0);
+    }
+
+    .tw-icon{
+        @include icon(10px 10px 0 10px);
+    }
+
+}
