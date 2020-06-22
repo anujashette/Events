@@ -1,4 +1,4 @@
-const winston = require('../node_modules/winston');
+const winston = require('winston');
 const { format } = winston;
 const { combine, timestamp, prettyPrint } = format;
 

@@ -1,10 +1,10 @@
 require('dotenv').config();
-let log = require('../logFile/winston');
+let log = require('../LoggerWinston/winston');
 const mongoose = require('mongoose');
 
-mongoose.connect(`mongodb://localhost:${process.env.DBURL}/Events`, {
+mongoose.connect(process.env.DBURL, {
     useNewUrlParser: true,
-    useFindAndModify: false,
+    useFindAndModify: false,    
     useCreateIndex: true,
     useUnifiedTopology: true
 });

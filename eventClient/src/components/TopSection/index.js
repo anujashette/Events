@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles.css';
 
-const TopSection = () =>
+const TopSection = () =>{
+    const [sticky, setSt]
       <div className="event-details">
           <div className="line"></div>
         <div className="top-section row">
@@ -25,6 +26,5 @@ const TopSection = () =>
             </span>
         </div>
         </div>
-      </div>;
-
+      </div>};
 export default TopSection;

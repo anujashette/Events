@@ -1,4 +1,4 @@
-const log = require('../logFile/winston');
+const log = require('../LoggerWinston/winston');
 const EventType = require('../app/staticContent');
 
 exports.eventValidator = ( function (req,res,next) {

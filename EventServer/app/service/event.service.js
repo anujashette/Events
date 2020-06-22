@@ -1,6 +1,6 @@
 const eventModel = require('../model/event.model');
 function Service() { }
-const log = require('../../logFile/winston');
+const log = require('../../LoggerWinston/winston');
 
 /****************************************************************************************************
  * @param movieParam 

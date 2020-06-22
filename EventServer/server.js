@@ -6,9 +6,13 @@
  *
  *  @author  Anuja Shette
  *  @version 1.0
- *  @since  6-3-2020
+ *  @since  6-6-2020
  ******************************************************************************/
 
+ /**
+  * @module express,bodyParser,expressValidator,dotenv,cors
+  * @description Modules are required throughout developemnt and it's functionality used.
+  */
 const express = require('express');
 const bodyParser = require('body-parser');
 const routes = require('./app/router/routes');
@@ -24,9 +28,17 @@ app.use(cors());
 app.use(expressValidator());
 app.use('/',routes);
 
+/**
+ * @function get
+ * @description Router to check connection is successfull
+ */
 app.get('/',function(req,res){
     res.send('Event API running...');
 });
+/**
+ * @function listen
+ * @description Request Listen on PORT
+ */
 app.listen(process.env.PORT, function () { 
     console.log('app running on port http://localhost:'+process.env.PORT);
 });

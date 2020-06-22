@@ -1,5 +1,5 @@
 const eventService = require('../service/event.service');
-const log = require('../../logFile/winston');
+const log = require('../../LoggerWinston/winston');
 const pageList = require('../middleware/pagination')
 
 function EventController() { }
