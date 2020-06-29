@@ -92,3 +92,4 @@ typings/
 
 # ignore txt file
 *.txt
+EventServer/logger
