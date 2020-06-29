@@ -5,7 +5,7 @@ import logo from '../../images/th-icon-8.jpg';
 
 const InterestCard = (props) =>
       <div className="interest-card">
-            <p className="top-div">Click on Interested to stay updated about this</p>
+            <p className="top-div">Click on Interested to stay updated about this event</p>
             <div className="bottom-div">
                   <div className="like-div">
                         <span>
@@ -18,6 +18,7 @@ const InterestCard = (props) =>
                         Interested
                   </button>
             </div>
+            <div className="bottom-line"></div>
       </div>;
 
 export default InterestCard;

@@ -2,6 +2,7 @@ import React from 'react'
 import './styles.css'
 
 const Footer = () =>
+<div className="footer-section"> 
     <div className="footer">
         <div className="privacy-note">
             <div className="title">
@@ -443,6 +444,7 @@ const Footer = () =>
                 </div>
             </div>
         </div>
+    </div>
     </div>;
 
 export default Footer;

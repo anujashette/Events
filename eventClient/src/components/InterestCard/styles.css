@@ -8,7 +8,8 @@ body {
 .interest-card {
   padding: 16px 25px;
   background-color: #ffffff;
-  margin: 20px 0; }
+  margin: 20px 0;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05); }
   .interest-card .top-div {
     font-size: 16px;
     margin: 0px; }
@@ -28,6 +29,9 @@ body {
       margin: 0 29px 0 0;
       font-size: 12px;
       color: #666666; }
+      @media screen and (max-width: 990px) {
+        .interest-card .bottom-div .like-description {
+          width: 140px; } }
   .interest-card .btn-interested {
     width: 148px;
     height: 38px;
@@ -38,3 +42,15 @@ body {
     border: 1px solid #0378ff;
     border-radius: 4px;
     cursor: pointer; }
+  .interest-card .bottom-line {
+    display: none; }
+  @media screen and (max-width: 990px) {
+    .interest-card {
+      padding: 0 5px;
+      box-shadow: none; }
+      .interest-card .btn-interested {
+        margin: auto 0; }
+      .interest-card .bottom-line {
+        display: block;
+        margin: 20px -10px;
+        border-bottom: 1px solid #b4b4b4; } }

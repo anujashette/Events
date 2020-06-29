@@ -5,6 +5,7 @@
     padding: 16px 25px;
     background-color: $white;
     margin: 20px 0;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
     .top-div{
         font-size: 16px;
         margin: 0px;    
@@ -27,6 +28,9 @@
             margin: 0 29px 0 0;
             font-size: 12px;
             color: $light-gray-color;
+            @media screen and (max-width:990px) {
+                width: 140px;
+            }
         }
     }
     .btn-interested{
@@ -38,5 +42,19 @@
         background: $white;
         border: 1px solid  $interest-btn-color;
         border-radius: 4px;cursor: pointer;
+    }
+    .bottom-line{
+        display: none;
+    }
+    @media screen and (max-width:990px) {
+        padding: 0 5px;
+        box-shadow: none;
+        .btn-interested{
+            margin: auto 0;
+        }
+        .bottom-line{
+            display: block;
+            @include bottomLine(20px, -10px)
+        }
     }
 }

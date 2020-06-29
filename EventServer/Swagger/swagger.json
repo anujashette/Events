@@ -1,0 +1,280 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Events Swagger",
+        "description": "This is an event server swagger to access rest API ",
+        "version": "1.0.0",
+        "license": {
+            "name": "MIT",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "host": "localhost:5000",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "securityDefinitions": {
+        "Bearer": {
+            "type": "apiKey",
+            "name": "token",
+            "in": "header"
+        }
+    },
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/event/add": {
+            "post": {
+                "tags": [
+                    "EventDetails"
+                ],
+                "description": "Create new new event with all details",
+                "parameters": [
+                    {
+                        "name": "Event",
+                        "in": "body",
+                        "description": "Create event",
+                        "schema": {
+                            "$ref": "#/definitions/eventDetails"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Event added successfully",
+                        "schema": {
+                            "$ref": "#/definitions/eventDetails"
+                        },
+                        "400": {
+                            "description": "Invalid input"
+                        },
+                        "422": {
+                            "description": "Unprocessable data"
+                        }
+                    }
+                }
+            }
+        },
+        "/event": {
+            "get": {
+                "tags": [
+                    "EventDetails"
+                ],
+                "description": "Get all event details",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Event read successfully",
+                        "schema": {
+                            "$ref": "#/definitions/eventDetails"
+                        },
+                        "403": {
+                            "description": "Event already exist"
+                        },
+                        "400": {
+                            "description": "Invalid input"
+                        },
+                        "422": {
+                            "description": "Unprocessable data"
+                        }
+                    }
+                }
+            }
+        },
+        "/event/update": {
+            "put": {
+                "tags": [
+                    "EventDetails"
+                ],
+                "description": "Create update event details",
+                "parameters": [
+                    {
+                        "name": "Event",
+                        "in": "body",
+                        "description": "Update event details",
+                        "schema": {
+                            "$ref": "#/definitions/eventDetailsUpdate"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Event added successfully",
+                        "schema": {
+                            "$ref": "#/definitions/eventDetails"
+                        },
+                        "409": {
+                            "description": "Event already exist"
+                        },
+                        "400": {
+                            "description": "Invalid input"
+                        },
+                        "422": {
+                            "description": "Unprocessable data"
+                        }
+                    }
+                }
+            }
+        },
+        "/event/delete": {
+            "patch": {
+                "tags": [
+                    "EventDetails"
+                ],
+                "description": "Delete event details",
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "Id",
+                        "schema":{
+                            "$ref":"#/definitions/deleteEvent"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Event deleted successfully",
+                        "schema": {
+                            "$ref": "#/definitions/eventDetails"
+                        },
+                        "403": {
+                            "description": "Event not exist"
+                        },
+                        "400": {
+                            "description": "Invalid input"
+                        },
+                        "422": {
+                            "description": "Unprocessable data"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "eventDetails": {
+            "properties": { 
+                "eventTitle": {
+                    "type": "string",
+                    "unique": true,
+                    "required": true
+                },
+                "eventType": {
+                    "type": "string",
+                    "enum" : [
+                        "Dance", "Health and Fitness","Education","Health improvement","Theatre",
+                        "Kids activity","Acting","Wellness","Yoga","Photography","Arts and Craft","Gaming","Storytelling",
+                        "Technology","Business","Music","Writing","Sports","Motivational","Concerts","Open mic","Magic",
+                        "Mentalism","Circus","Poetry","Stand up comedy","Comedy"],
+                    "required": true
+                },
+                "eventLanguage": {
+                    "type": "string",
+                    "required": true
+                },
+                "audianceAllowedAge": {
+                    "type": "Number",
+                    "required": true
+                },
+                "eventDuration":{
+                    "type": "string",
+                    "required": true
+                },
+                "eventStartDate":{
+                    "type": "string",
+                    "required": true
+                },
+                "eventEndDate":{
+                    "type": "string",
+                    "required": true
+                },
+                "description":{
+                    "type": "string",
+                    "required": true
+                },
+                "eventPicture":{
+                    "type": "string"
+                },
+                "eventPrice":{
+                    "type": "Number",
+                    "required": true
+                },
+                "broadcastPlatform":{
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+        "eventDetailsUpdate":{
+            "properties": { 
+                "id":{
+                    "type":"string",
+                    "unique": true,
+                    "required": true
+                },
+                "eventTitle": {
+                    "type": "string"
+                },
+                "eventType": {
+                    "type": "string",
+                    "enum" : [
+                        "Dance", "Health and Fitness","Education","Health improvement","Theatre",
+                        "Kids activity","Acting","Wellness","Yoga","Photography","Arts and Craft","Gaming","Storytelling",
+                        "Technology","Business","Music","Writing","Sports","Motivational","Concerts","Open mic","Magic",
+                        "Mentalism","Circus","Poetry","Stand up comedy","Comedy"]
+                },
+                "eventLanguage": {
+                    "type": "string"
+                },
+                "audianceAllowedAge": {
+                    "type": "Number"
+                },
+                "eventDuration":{
+                    "type": "string"
+                },
+                "eventStartDate":{
+                    "type": "string"
+                },
+                "eventEndDate":{
+                    "type": "string"
+                },
+                "description":{
+                    "type": "string"
+                },
+                "eventPicture":{
+                    "type": "string"
+                },
+                "eventPrice":{
+                    "type": "Number"
+                },
+                "broadcastPlatform":{
+                    "type": "string"
+                }
+            }
+        },
+        "deleteEvent":{
+            "properties": {
+                "id": {
+                    "type": "String",
+                    "require": true
+                }
+            }
+        }
+    }
+}

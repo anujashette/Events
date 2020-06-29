@@ -9,6 +9,12 @@
     @media screen and (max-width: 1130px) {
         width: 100%;
     }
+    @media screen and (max-width: 990px){
+        .Middle-section{
+            background: $white;
+        }
+        // margin-top: 50px;
+    }
     .cover{
         margin-bottom: -35px;
     }

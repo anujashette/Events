@@ -22,9 +22,9 @@ const validator = require('../../utility/validator');
  *****************************************************************************************************
  */
 
-app.post('/event',validator.eventValidator,eventObj.createEvent);
+app.post('/event/add',validator.eventValidator,eventObj.createEvent);
 app.get('/event',eventObj.readEvent);
-app.put('/event',validator.eventValidator,eventObj.updateEvent);
-app.patch('/event',validator.eventValidator,eventObj.deleteEvent);
+app.put('/event/update',validator.eventValidator,eventObj.updateEvent);
+app.patch('/event/delete',validator.eventValidator,eventObj.deleteEvent);
 
 module.exports = app;

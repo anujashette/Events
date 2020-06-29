@@ -62,25 +62,77 @@ body {
   @media screen and (max-width: 990px) {
     .event-details {
       position: relative;
-      bottom: -35px; }
+      bottom: -35px;
+      padding-bottom: 16px; }
       .event-details .top-section-mobile {
         padding: 16px; }
+        .event-details .top-section-mobile .event-title {
+          font-size: 1.5rem; }
         .event-details .top-section-mobile .event-type-tag {
           display: flex;
           justify-content: flex-start;
           flex-direction: row; }
           .event-details .top-section-mobile .event-type-tag div {
             width: fit-content;
-            padding: 1px 6px;
+            padding: 0px 6px;
             border-radius: 2px;
             background: #2B3148;
-            height: 20px;
-            font-size: 1.3rem;
+            height: 15px;
+            font-size: 1rem;
             font-weight: 400;
             line-height: 1.5;
             color: #ffffff;
             margin: 5px; }
-        .event-details .top-section-mobile .watch-icon {
-          width: 18.82px;
-          height: 23px;
-          fill: red; } }
+        .event-details .top-section-mobile .calender {
+          width: 16px;
+          margin-right: 10px;
+          margin-bottom: 4px; }
+        .event-details .top-section-mobile .stream {
+          width: 16px;
+          margin-right: 12px;
+          margin-bottom: 4px; }
+        .event-details .top-section-mobile .datesAndStream {
+          font-size: 1.5rem; }
+      .event-details .bottom-line {
+        margin: 0px 16px;
+        border-bottom: 1px solid #b4b4b4; }
+      .event-details .more-info {
+        padding: 16px; }
+        .event-details .more-info .more-btn {
+          width: 100%;
+          text-align: left;
+          font-size: 1.4rem;
+          color: #1F253A;
+          font-weight: 400;
+          padding: 0px;
+          outline: none;
+          outline-offset: unset;
+          box-shadow: none; }
+        .event-details .more-info .event-type {
+          width: 16px;
+          margin-right: 10px;
+          margin-bottom: 4px; }
+        .event-details .more-info .duration {
+          width: 16px;
+          margin-right: 10px;
+          margin-bottom: 4px; }
+        .event-details .more-info .language {
+          width: 16px;
+          margin-right: 10px;
+          margin-bottom: 4px; }
+        .event-details .more-info .age-allowed {
+          width: 16px;
+          margin-right: 10px;
+          margin-bottom: 4px; }
+        .event-details .more-info .online-stream {
+          width: 16px;
+          margin-right: 10px;
+          margin-bottom: 4px; }
+        .event-details .more-info .label {
+          color: #666666;
+          font-size: 1.3rem;
+          font-weight: 400;
+          padding-right: 0;
+          padding-left: 0px; }
+        .event-details .more-info .info-row {
+          padding: 5px 0 0 0; } }

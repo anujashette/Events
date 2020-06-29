@@ -72,7 +72,7 @@ function EventModel() { }
  */
 EventModel.prototype.create = async (eventParam) => {
 
-    let savedEvent = await Event.findOne({ 'name': eventParam.name });
+    let savedEvent = await Event.findOne({ 'name': eventParam.title });
 
     if (savedEvent !== null) {
         savedEvent = 'Event already exist';

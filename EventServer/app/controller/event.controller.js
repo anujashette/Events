@@ -27,14 +27,14 @@ EventController.prototype.createEvent = (req, res) => {
         };
 
         eventService.createEvent(eventParam, (error, response) => {          
-            if (error) {
+            if (error) {                
                 return res.status(409).send({
                     status: '409',
                     message: error,
                     data: ''
                 });
             }
-            else {
+            else {                
                 return res.status(200).send({
                     status: '200',
                     message: 'Event added successfully',
@@ -58,7 +58,11 @@ EventController.prototype.readEvent = (req, res) => {
     try {
         eventService.readEvent((error, response) => {
             if (error) {
-                console.log(error);
+                return res.status(403).send({
+                    status: '403',
+                    message: 'Something went wrong...',
+                    data: response
+                });
             }
             else {
                 return res.status(200).send({
@@ -151,7 +155,7 @@ EventController.prototype.updateEvent = (req, res) => {
  ****************************************************************************************************
  */
 EventController.prototype.deleteEvent = (req, res) => {
-    try {
+    try {        
         const eventParam = {
             id: req.body.id,
         };

@@ -1,7 +1,7 @@
-import React from 'react'
-import './styles.css'
-import TopSection from '../TopSection'
-import MiddelSection from '../MiddleSection'
+import React from 'react';
+import './styles.css';
+import TopSection from '../TopSection';
+import MiddelSection from '../MiddleSection';
 
 const Section = (props) =>
       <div className="section">

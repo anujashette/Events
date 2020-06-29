@@ -26,4 +26,19 @@
     p{
      margin: 0px;   
     }
+    @media screen and (max-width:990px) {
+        padding: 25px 20px;
+        .online-icon{
+            width: 90px;
+            margin-right: 25px;
+            position: absolute;
+            top: -15px;
+        }  
+    }
+}
+
+@media screen and (max-width:990px) {
+    .bottom-line{
+        @include bottomLine(20px, 0px)
+    }
 }

@@ -4,9 +4,9 @@ export const getEvents = () =>
   dispatch =>
     fetch(process.env.REACT_APP_API_URL+'/event')
       .then(response => response.json())
-      .then(response => {        
+      .then(response => {  
         dispatch({
           type: types.FETCH_EVENTS,
-          payload: response.data
+          payload: response.data.events
         })
       })

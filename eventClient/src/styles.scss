@@ -28,3 +28,24 @@ body {
   background: $white;
   
 }
+
+@mixin bottomLine($topBottom, $rightLeft) {
+  margin: $topBottom $rightLeft;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+@mixin registerButton($topPadding, $width,$height, $font) {
+  background-color: #0378FF;
+  color: white;
+  padding: $topPadding 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+  width: $width;
+  border: none;
+  height: $height;
+  max-width: $width;
+  font-size: $font;
+  outline: none;
+}

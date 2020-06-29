@@ -25,3 +25,16 @@ body {
     font-weight: 300; }
   .onlinestream-card p {
     margin: 0px; }
+  @media screen and (max-width: 990px) {
+    .onlinestream-card {
+      padding: 25px 20px; }
+      .onlinestream-card .online-icon {
+        width: 90px;
+        margin-right: 25px;
+        position: absolute;
+        top: -15px; } }
+
+@media screen and (max-width: 990px) {
+  .bottom-line {
+    margin: 20px 0px;
+    border-bottom: 1px solid #b4b4b4; } }
