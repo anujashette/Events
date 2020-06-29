@@ -90,5 +90,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# Looger file
-logger
+# ignore txt file
+*.txt
+EventServer/logger
