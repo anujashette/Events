@@ -19,9 +19,14 @@
             display: none;
         }
     }
-    .top-section{
-        @include sideSpacing;
+    
+    .desktop-header{
+        padding: 45px;
+        background-color: #EEEEEE;    
+    }
 
+    .comman-section {
+        @include sideSpacing;
         .event-title{
             font-weight: 600;
             font-family: sans-serif;
@@ -37,34 +42,81 @@
             @include registerButton(15px, 160px, 60px, 18px);
         }
     }
+    .top-section{
+        @extend .comman-section;
+    }
 
     .border-div{
         border-bottom: 0.1px solid #DDDDDD !important;
         margin: 0 15px;
     }
     
-    .bottom-section{
-        @include sideSpacing;
-        .additional-details{
-            font-size: 16px;
-            font-weight: 400;
-            span{
-                padding: 0 30px 0 0;
-            }
-            .watch-icon{
-                width: 18.82px;
-                height: 23px;
-            }
-            .rupee{
-                font-weight: 500 !important;
-                color: black;
-            }
+    .additional-details{
+        font-size: 16px;
+        font-weight: 400;
+        span{
+            padding: 0 30px 0 0;
+        }
+        .watch-icon{
+            width: 18.82px;
+            height: 23px;
+        }
+        .rupee{
+            font-weight: 500 !important;
+            color: black;
         }
     }
+
+    .bottom-section {
+        @include sideSpacing;
+        @extend .additional-details;
+    }
+
+    .top-section-fixed {
+        @extend .comman-section;
+    }
+
+    .fix-header{
+        position: fixed;
+        top: 0;
+        background-color: white;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+        // -webkit-transition: all 1.2s ease-in-out;
+    }
+    &--bottom-section-fixed {
+        @include sideSpacing;
+        @extend .additional-details;
+    }
+
     @media screen and (max-width:990px) {
         position: relative;
         bottom: -35px;
         padding-bottom: 16px;
+        .mobile-header{
+            background: linear-gradient(rgba(0, 0, 0, 0.84) 0%, rgba(0, 0, 0, 0.3) 62.5%, rgba(0, 0, 0, 0) 100%);
+            width: 100%;
+            height: 48px;
+            position: fixed;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            align-items: center;
+        }
+        .header-title{
+            font-size: 15px;
+            color: white;
+            font-weight: 300;
+        }
+        .comman-icon{
+            @include icons(5px)
+        }
+        .back-icon{
+            width: 11px;
+            fill: white;
+        }
         .top-section-mobile{
             padding: 16px;
             .event-title{
@@ -112,21 +164,6 @@
                 outline: none;
                 outline-offset: unset;
                 box-shadow: none;
-            }
-            .event-type{
-                @include icons(10px)
-            }
-            .duration{
-                @include icons(10px)
-            }
-            .language{
-                @include icons(10px)
-            }
-            .age-allowed{
-                @include icons(10px)
-            }
-            .online-stream{
-                @include icons(10px)
             }
             .label{
                 color: $light-gray-color;

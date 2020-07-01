@@ -2,31 +2,26 @@ import React, { Component } from 'react';
 
 class index extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
+    this.state = {
 
     }
     window.addEventListener('scroll', this.handleScroll, true);
-
   }
 
-handleScroll = (event) => {
-  var header = document.getElementById("myHeader");
-  console.log('header',header, event);
-  
-  var sticky = header.offsetTop;
-  console.log('sticky',sticky);
-  if (window.pageYOffset > sticky) {
-    console.log('mount',window.pageYOffset);
-    
-    // header.classList.add("sticky");
-  } else {
-    console.log('unmount');
+  handleScroll = (event) => {
+    var header = document.getElementById("myHeader");
+    console.log('header', event);
 
-    // header.classList.remove("sticky");
+    var sticky = header.offsetTop;
+    console.log('sticky', sticky);
+    if (window.pageYOffset > sticky) {
+      console.log('mount', window.pageYOffset);
+    } else {
+      console.log('unmount');
+    }
   }
-}
 
   render() {
     return (
